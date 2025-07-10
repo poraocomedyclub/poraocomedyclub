@@ -3,115 +3,130 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Porão Comedy Club</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0e0e;
       color: #fff;
     }
     header {
-      background-color: #000;
-      padding: 20px;
+      background: #000;
+      padding: 40px 20px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+    .sub {
+      color: #aaa;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1a1a1a;
+    }
+    .intro h2 {
       color: #ffcc00;
     }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    .unidades {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .hero {
+    .card {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      width: 320px;
       text-align: center;
-      background-color: #222;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
     }
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+    .card h3 {
+      margin-top: 10px;
+      color: #ffcc00;
     }
     .btn {
-      background-color: #ffcc00;
+      display: inline-block;
+      margin-top: 15px;
+      background: #ffcc00;
       color: #000;
-      padding: 15px 25px;
-      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 6px;
       font-weight: bold;
-      border-radius: 5px;
-    }
-    .sobre {
-      line-height: 1.6;
+      text-decoration: none;
     }
     iframe {
       width: 100%;
-      height: 800px;
-      border: 0;
-      margin-top: 20px;
+      height: 250px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 15px;
     }
-    footer {
-      background-color: #000;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
+    .social {
+      margin-top: 15px;
     }
     .social a {
+      margin: 5px;
       color: #ffcc00;
-      margin: 0 10px;
       text-decoration: none;
-      font-size: 1.2em;
+      font-weight: bold;
+    }
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Porão Comedy Club</h1>
-    <nav>
-      <a href="#shows">Ingressos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Bem-vindo ao palco da comédia!</h2>
-    <a href="#shows" class="btn">Ver Programação</a>
-  </section>
+<header>
+  <h1>Porão Comedy Club</h1>
+  <p class="sub">O palco da comédia mais underground do Brasil</p>
+</header>
 
-  <section id="shows">
-    <h2>Próximos Shows</h2>
-    <iframe src="https://www.sympla.com.br/eventos/poraocomedyclub" allowfullscreen></iframe>
-  </section>
+<section class="intro">
+  <h2>Qual porão você quer descer hoje?</h2>
+  <p>Escolha sua unidade e veja o que vai te fazer chorar (de rir).</p>
+</section>
 
-  <section id="sobre" class="sobre">
-    <h2>Sobre o Porão</h2>
-    <p>O Porão Comedy Club é o lar da comédia em Blumenau. Criado para oferecer uma experiência única de stand-up comedy, o clube reúne talentos nacionais e locais num espaço aconchegante e cheio de personalidade. Venha dar risada e viver noites memoráveis!</p>
-  </section>
-
-  <section id="contato">
-    <h2>Localização</h2>
-    <p>Shopping Park Europeu – Blumenau/SC</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.603555911662!2d-49.075317!3d-26.893500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df18d2ac7b9d43%3A0x5566e99f9c8b7ad2!2sShopping%20Park%20Europeu!5e0!3m2!1spt-BR!2sbr!4v1689277611205" allowfullscreen></iframe>
-
+<div class="unidades">
+  <div class="card">
+    <h3>Blumenau</h3>
+    <a href="https://www.sympla.com.br/poraocomedyclub" class="btn" target="_blank">Ver Ingressos</a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.603555911662!2d-49.075317!3d-26.893500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df18d2ac7b9d43%3A0x5566e99f9c8b7ad2!2sShopping%20Park%20Europeu!5e0!3m2!1spt-BR!2sbr!4v1689277611205"></iframe>
     <div class="social">
-      <p>Siga a gente:</p>
-      <a href="https://instagram.com/poraocomedyclub" target="_blank">Instagram</a> |
-      <a href="https://wa.me/5547999999999" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/poraocomedyclub" target="_blank">Instagram</a>
+      <a href="https://chat.whatsapp.com/link-do-grupo-blumenau" target="_blank">WhatsApp</a>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Porão Comedy Club. Todos os direitos reservados.</p>
-  </footer>
+  <div class="card">
+    <h3>Balneário Camboriú</h3>
+    <a href="https://www.sympla.com.br/produtor/poraobalneario" class="btn" target="_blank">Ver Ingressos</a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.6138474243026!2d-48.639547!3d-26.923234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df179b3fbd2897%3A0x4de8e34e7d6479e!2sBalne%C3%A1rio%20Cambori%C3%BA!5e0!3m2!1spt-BR!2sbr!4v1689280012034"></iframe>
+    <div class="social">
+      <a href="https://instagram.com/poraobalneario" target="_blank">Instagram</a>
+      <a href="https://chat.whatsapp.com/link-do-grupo-balneario" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Porão Comedy Club. Todos os direitos reservados. Se não riu, volte amanhã.</p>
+</footer>
+
 </body>
 </html>
